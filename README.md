@@ -1,5 +1,7 @@
 # coding...
 a really random stack of codes... ヽ(*・ω・)ﾉ
+this folder is meant to be a backup and a way to share my codes
+with other students in class.
 
 RULES:
 - not all codes are mine;
