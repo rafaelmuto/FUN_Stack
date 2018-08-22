@@ -1,2 +1,2 @@
 # coding...
-my studies in fullstack dev... (a really random stack of codes)
+a really random stack of codes... ヽ(*・ω・)ﾉ
