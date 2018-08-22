@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>paralax background</title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      h2 {
+        letter-spacing: 10px;
+      }
+
+      .paralax {
+        background-image: url(img/domus.jpg);
+        opacity: 0.8;
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .paralax_tokyo {
+        background-image: url(img/tokyo.jpg);
+        height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .box {
+        background-color: black;
+        color: white;
+        width: 100%;
+        padding: 1em;
+        text-align: justify;
+      }
+
+      .holder {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        text-align: center;
+      }
+
+      .button {
+        background-color: black;
+        color: white;
+        opacity: 1.0;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="paralax" style="height:400px;">
+      <div class="holder">
+        <span class="button">Lorem ipsum dolor sit amet.</span>
+      </div>
+    </div>
+    <div class="box">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="paralax_tokyo">
+      <div class="holder">
+        <span class="button">Lorem ipsum dolor sit amet.</span>
+      </div>
+    </div>
+    <div class="box">
+      <h2>Lorem ipsum.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="paralax">
+      <div class="holder">
+        <span class="button">Lorem ipsum dolor sit amet.</span>
+      </div>
+    </div>
+  </body>
+
+</html>

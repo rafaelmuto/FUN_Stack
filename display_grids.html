@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>display grids test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+        font-family: Ubuntu;
+        margin: 0;
+        padding: 0;
+      }
+
+      .tm_grid {
+        display: grid;
+        margin: 0 auto;
+        max-width: 900px;
+        /* height: 500px; */
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: "title title" "header header" "sidebar content" "footer footer";
+        grid-template-rows: 4fr 1fr 500px 2fr;
+        grid-gap: 3px;
+        padding: 3px;
+        background-color: #bdc3c7;
+      }
+
+      .tm_title {
+        grid-area: title;
+        background-color: #e74c3c;
+      }
+
+      .tm_header {
+        grid-area: header;
+        background-color: #3498db;
+      }
+
+      .tm_sidebar {
+        grid-area: sidebar;
+        background-color: #1abc9c;
+      }
+
+      .tm_content {
+        grid-area: content;
+        background-color: #2ecc71;
+      }
+
+      .tm_footer {
+        grid-area: footer;
+        background-color: #e74c3c;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Grid-Template</h1>
+    <div class="tm_grid">
+      <div class="tm_title">title</div>
+      <div class="tm_header">header</div>
+      <div class="tm_sidebar">sidebar</div>
+      <div class="tm_content">content</div>
+      <div class="tm_footer">footer</div>
+    </div>
+
+
+  </body>
+
+</html>

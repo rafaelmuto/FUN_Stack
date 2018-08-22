@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <title>Boceto em grids</title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+        font-family: Ubuntu;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-image: url(./img/bg-body.png);
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .grid_wrapper {
+        /* max-width: 1200px; */
+        /* margin: 0 auto; */
+        display: grid;
+        grid-template-columns: 1fr 1200px 1fr;
+        grid-template-areas: ". header ." ". menu ." ". banner ." ". content ." ". footer .";
+        grid-row-gap: 20px;
+      }
+
+      .gr_header {
+        /* background-color: #e74c3c; */
+        grid-area: header;
+        justify-self: center;
+        padding-top: 20px;
+      }
+
+      .gr_nav {
+        /* background-color: #3498db; */
+        grid-area: menu;
+        /* justify-self: center; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+      }
+
+      .gr_banner {
+        background-color: #2ecc71;
+        grid-area: banner;
+        width: 100%
+      }
+
+      .gr_content {
+        background-color: #f1c40f;
+        grid-area: content;
+        height: 800px;
+        display: grid;
+        grid-template-columns: : 1fr 1fr 1fr;
+        grid-template-areas: "box box box"
+      }
+
+      .gr_box {
+        grip-area: box;
+        background-color: #2ecc71;
+      }
+
+      .gr_footer {
+        background-color: #c0392b;
+        grid-area: footer;
+        color: white;
+        height: 70px;
+        border-radius: 20px 20px 0 0;
+        text-align: center;
+      }
+
+      .gr_header img {
+        width: 180px;
+        border: 1px solid;
+        border-radius: 50%;
+      }
+
+      .gr_mitem {
+        background-color: black;
+        color: white;
+        text-align: center;
+        height: 40px;
+        text-transform: uppercase;
+        padding-top: .6em;
+      }
+
+      .gr_footer ul {
+        list-style: none;
+        overflow: hidden;
+        width: auto;
+        display: inline-block;
+        padding-top: 15px;
+      }
+
+      .gr_footer ul li:nth-child(1n+2)::before {
+        content: " | ";
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      .gr_footer ul li {
+        float: left;
+        text-transform: capitalize;
+        width: max-content;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid_wrapper">
+      <header class="gr_header">
+        <img src="img/logo.jpg" alt="logo do site">
+      </header>
+      <nav class="gr_nav">
+        <div class="gr_mitem"><a href="#">home</a></div>
+        <div class="gr_mitem"><a href="#">quem somos</a></div>
+        <div class="gr_mitem"><a href="#">serviços</a></div>
+        <div class="gr_mitem"><a href="#">portifólio</a></div>
+        <div class="gr_mitem"><a href="#">lojas</a></div>
+        <div class="gr_mitem"><a href="#">contato</a></div>
+      </nav>
+      <img class="gr_banner" src="img/img-banner.jpg" alt="banner full width">
+
+      <div class="gr_content">
+        <div class="gr_box">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="gr_box">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="gr_box">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <footer class="gr_footer">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">quem somos</a></li>
+          <li><a href="#">serviços</a></li>
+          <li><a href="#">portifólio</a></li>
+          <li><a href="#">lojas</a></li>
+          <li><a href="#">contato</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+
+</html>
