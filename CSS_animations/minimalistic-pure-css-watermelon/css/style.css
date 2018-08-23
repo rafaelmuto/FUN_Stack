@@ -1,0 +1,116 @@
+body {
+  background: #74afad;
+}
+god {
+  position: relative;
+  bottom: -20.25vmin;
+}
+.cut {
+  position: relative;
+  margin: auto;
+  top: 20.0vmin;
+  height: 12.5vmin;
+  width: 43.75vmin;
+  background: #74afad;
+  z-index: 5;
+}
+main {
+  position: relative;
+  margin: auto;
+  height: 25.0vmin;
+  width: 37.5vmin;
+  top: 9.375vmin;
+  z-index: 1;
+}
+.outer {
+  position: relative;
+  margin: auto;
+  height: 18.75vmin;
+  width: 25.0vmin;
+  background: #97ca74;
+  top: 3.125vmin;
+  border-radius: 0 0 50% 50%;
+  z-index: 1;
+}
+/*
+.shade {
+  position: absolute;
+  margin: auto;
+  height: 350px;
+  width: 450px;
+  background: grey;
+  opacity: .1;
+  z-index: 2;
+}
+*/
+.inner {
+  position: relative;
+  margin: auto;
+  top: 0.625vmin;
+  height: 15.625vmin;
+  width: 21.875vmin;
+  background: #9de26f;
+  border-radius: 0 0 50% 50%;
+}
+.edible {
+  position: relative;
+  marigin: auto;
+  left: 0.9375vmin;
+  height: 14.375vmin;
+  width: 20.0vmin;
+  background: #ef9da2;
+  border-radius: 0 0 50% 50%;
+}
+.eyes {
+  position: relative;
+  bottom: -7.75vmin;
+  right: 5.8125vmin;
+  margin: auto;
+  height: 2.125vmin;
+  width: 2.125vmin;
+  background: black;
+  border-radius: 6.25vmin;
+  z-index: 8;
+  animation: blink .3s ease-in-out both alternate infinite;
+}
+.eyes:after {
+  content: "";
+  position: absolute;
+  left: 11.523vmin;
+  height: 2.125vmin;
+  width: 2.125vmin;
+  background: black;
+  border-radius: 6.25vmin;
+  animation: blink .3s ease-in-out both alternate infinite;
+}
+.mouth {
+  position: absolute;
+  margin: auto;
+  left: 7.3vmin;
+  top: 10.375vmin;
+  height: 1.25vmin;
+  width: 5.125vmin;
+  background: black;
+  border-radius: 0 0 50% 50%;
+  animation: move 4s ease-in-out both alternate infinite;
+}
+
+/* Keyframes */
+@keyframes blink {
+   from {
+    height: 2.125vmin;
+    width: 2.125vmin; 
+  }
+   to {
+    height: 0vmin;
+    width: 1vmin;
+  }
+}
+@keyframes move {
+  from {
+    transform: translateY(0vmin);
+  }
+  to {
+    transform: translateY(0.825vmin);
+  }
+}
