@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Custom Properties (css variables)</title>
+    <style media="screen">
+      :root {
+        --var_a: 50%;
+        --var_b: 150px;
+        --var_color: #999;
+      }
+
+      * {
+        font-family: monospace;
+      }
+
+      .test {
+        width: var(--var_a);
+        height: var(--var_b);
+        background-color: var(--var_color);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="test">
+      .test content
+    </div>
+  </body>
+
+</html>
