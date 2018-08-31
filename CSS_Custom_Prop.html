@@ -5,28 +5,38 @@
     <meta charset="utf-8">
     <title>CSS Custom Properties (css variables)</title>
     <style media="screen">
-      :root {
-        --var_a: 50%;
-        --var_b: 150px;
-        --var_color: #999;
-      }
+      :root {}
 
       * {
         font-family: monospace;
       }
 
-      .test {
-        width: var(--var_a);
-        height: var(--var_b);
-        background-color: var(--var_color);
+      .btn {
+        padding: 2rem 4rem;
+        border: 2px solid var(--color, black);
+        background: transparent;
+        font-size: 0.6em;
+        border-radius: 2px;
+      }
+
+      /*on hover*/
+
+      .btn:hover {
+        cursor: pointer;
+        background: var(--color, black);
+        color: white;
+      }
+
+      .red {
+        --color: red;
       }
     </style>
   </head>
 
   <body>
-    <div class="test">
-      .test content
-    </div>
+    <button class="btn">Hello</button>
+    <button class="btn red">Hello</button>
+
   </body>
 
 </html>
