@@ -55,7 +55,7 @@
         <input class="line" type="text" name="name" placeholder=" your name goes here!" value="<?php echo isset($_POST['name'])?$_POST['name']:''; ?>"/>
         <br>
         <strong>Last Name:</strong>
-        <input class="line" type="text" name="lname" placeholder=" last name here..." value="<?php echo isset($_POST['sname'])?$_POST['sname']:''; ?>"/>
+        <input class="line" type="text" name="lname" placeholder=" last name here..." value="<?php echo isset($_POST['lname'])?$_POST['lname']:''; ?>"/>
         <br>
         <strong>E-Mail:</strong>
         <input class="line" type="email" name="email" placeholder=" type your email here!" value="<?php echo isset($_POST['email'])?$_POST['email']:''; ?>"/>

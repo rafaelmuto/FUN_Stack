@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Mix_Blend_Modes & filters</title>
+    <style media="screen">
+      * {
+        font-family: monospace;
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        width: 300px;
+        filter: grayscale();
+        mix-blend-mode: multiply;
+      }
+
+      .back {
+        background-color: #3498db;
+        height: 300px;
+        width: 310px;
+        mix-blend-mode: multiply;
+      }
+
+      .back2 {
+        background-color: #f1c40f;
+        height: 300px;
+        width: 320px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Mix_Blend_Modes + filters</h1>
+    <hr><br>
+    <div class="back2">
+      <div class="back">
+        <img src="./img/A3.jpg" alt="">
+      </div>
+    </div>
+
+
+
+
+  </body>
+
+</html>
