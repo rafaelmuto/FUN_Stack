@@ -14,7 +14,7 @@
       }
 
       fieldset{
-        width: 70%;
+        width: 600px;
         margin: 0 auto;
       }
 
