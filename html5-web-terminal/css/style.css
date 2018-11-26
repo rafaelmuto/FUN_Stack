@@ -1,30 +1,37 @@
 ::selection {
   background: #FF5E99;
 }
+
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
 }
+
 body {
   font-size: 11pt;
   font-family: Inconsolata, monospace;
   color: white;
   background-color: black;
 }
+
 #container {
   padding: .1em 1.5em 1em 1em;
 }
+
 #container output {
   clear: both;
   width: 100%;
 }
+
 #container output h3 {
   margin: 0;
 }
+
 #container output pre {
   margin: 0;
 }
+
 .input-line {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
@@ -37,11 +44,13 @@ body {
   box-align: stretch;
   clear: both;
 }
-.input-line > div:nth-child(2) {
+
+.input-line>div:nth-child(2) {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
 }
+
 .prompt {
   white-space: nowrap;
   color: #96b38a;
@@ -59,6 +68,7 @@ body {
   -moz-user-select: none;
   user-select: none;
 }
+
 .cmdline {
   outline: none;
   background-color: transparent;
@@ -68,6 +78,7 @@ body {
   border: none;
   color: inherit;
 }
+
 .ls-files {
   height: 45px;
   -webkit-column-width: 100px;
@@ -76,31 +87,30 @@ body {
   column-width: 100px;
 }
 
-
 /************************************************************/
 /* SVG Clock                                                */
 /************************************************************/
-
 .clock-container {
-  display: none /*inline-block*/;
+  display: none
+    /*inline-block*/
+  ;
   position: relative;
   width: 200px;
   vertical-align: middle;
   overflow: hidden;
-} 
+}
 
-.clock-container > svg > circle {
+.clock-container>svg>circle {
   stroke-width: 2px;
   stroke: #fff;
 }
 
-.hour, .min, .sec { 
+.hour, .min, .sec {
   stroke-width: 1px;
   fill: #333;
   stroke: #555;
 }
 
 .sec {
-   stroke: #f55;
+  stroke: #f55;
 }
-
