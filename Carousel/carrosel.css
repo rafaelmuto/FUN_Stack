@@ -1,0 +1,72 @@
+:root {
+  --pic-height: 500px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.carrosel {
+  margin: 0 auto;
+  width: 100%;
+  height: var(--pic-height);
+  background-color: black;
+  text-align: center;
+  position: relative;
+}
+
+.pic {
+  margin: 0 auto;
+  position: absolute;
+  height: var(--pic-height);
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.pic_up {
+  margin: 0 auto;
+  position: absolute;
+  height: var(--pic-height);
+  transform: translateX(-50%);
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.icon {
+  font-size: 60px !important;
+  color: black;
+}
+
+.block_icon {
+  background: white;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  opacity: .3;
+  border-radius: 50%;
+}
+
+.block_icon:hover {
+  opacity: .6;
+  transition: opacity .5s ease;
+}
+
+.block_icon:active {
+  opacity: 1;
+  width: 55px;
+  height: 55px;
+}
+
+.torigth {
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.toleft {
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
